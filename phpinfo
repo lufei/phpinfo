@@ -3,12 +3,14 @@
 
 $zts = PHP_ZTS ? 'true' : 'false';
 $debug = PHP_DEBUG ? 'true' : 'false';
+$config_file_path = PHP_CONFIG_FILE_PATH;
 
 echo 'PHP_SAPI：' . PHP_SAPI, PHP_EOL;
 echo 'PHP_VERSION：' . PHP_VERSION, PHP_EOL;
-echo 'PHP_ZTS：' . $zts, PHP_EOL;
-echo 'PHP_DEBUG：' . $debug, PHP_EOL;
+echo "PHP_ZTS：{$zts}", PHP_EOL;
+echo "PHP_DEBUG：{$debug}", PHP_EOL;
 echo 'PHP_OS：' . PHP_OS, PHP_EOL;
 echo 'PHP_BINARY：' . PHP_BINARY, PHP_EOL;
-echo 'PHP_CONFIG_FILE_PATH：' . PHP_CONFIG_FILE_PATH, PHP_EOL;
+echo "PHP_CONFIG_FILE_PATH：{$config_file_path}", PHP_EOL;
+echo "PHP_LOADED_CONFIG_FILE：{$config_file_path}/php.ini", PHP_EOL;
 echo 'PHP_CONFIG_FILE_SCAN_DIR：' . PHP_CONFIG_FILE_SCAN_DIR, PHP_EOL;
