@@ -1,0 +1,14 @@
+#!/usr/bin/env php
+<?php
+
+$zts = PHP_ZTS ? 'true' : 'false';
+$debug = PHP_DEBUG ? 'true' : 'false';
+
+echo 'PHP_SAPI：' . PHP_SAPI, PHP_EOL;
+echo 'PHP_VERSION：' . PHP_VERSION, PHP_EOL;
+echo 'PHP_ZTS：' . $zts, PHP_EOL;
+echo 'PHP_DEBUG：' . $debug, PHP_EOL;
+echo 'PHP_OS：' . PHP_OS, PHP_EOL;
+echo 'PHP_BINARY：' . PHP_BINARY, PHP_EOL;
+echo 'PHP_CONFIG_FILE_PATH：' . PHP_CONFIG_FILE_PATH, PHP_EOL;
+echo 'PHP_CONFIG_FILE_SCAN_DIR：' . PHP_CONFIG_FILE_SCAN_DIR, PHP_EOL;
